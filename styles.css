@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+}
+
+
+header {
+    height: 3rem;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    gap: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#btnAgregarMascota {
+
+    height: 2rem;
+    border-radius: 1rem;
+    border: 1px solid lightblue;
+}
+
+#dogs-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: cadetblue;
+}
+
+.TarjetaPerro {
+    background-color: whitesmoke;
+    border: 3px solid black;
+    padding: 10px;
+    height: 27rem;
+    width: 15rem;
+    border-radius: 2rem;
+
+}
+
+
+
+.TarjetaPerro h3 {
+    text-align: center;
+}
+
+.TarjetaPerro h4 {
+    text-align: center;
+}
+
+.TarjetaPerro p {
+    text-align: justify;
+}
+
+.editar {
+    border-radius: 5px;
+    background-color: lightblue;
+    border: 0;
+    margin-left: 0.5rem;
+    margin-right: 8rem;
+    margin-top: 1rem;
+}
+
+
+
+.eliminar {
+
+
+    background: transparent;
+    border: none;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+
+.eliminar::before,
+.eliminar::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background-color: #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.eliminar::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+
+img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 6rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
